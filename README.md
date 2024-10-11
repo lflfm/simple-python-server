@@ -29,3 +29,7 @@
 
    `python -m unittest tests.py`  
    This will execute all the unit tests for the Flask server.
+
+## Deploy to K8S
+
+`cd Helm && helm upgrade --install -n somenamespace someinstallname .`

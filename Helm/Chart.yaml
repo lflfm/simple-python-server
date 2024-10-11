@@ -1,0 +1,27 @@
+apiVersion: v2
+name: simple-server
+version: 0.1.0
+description: A Helm chart for deploying a simple Flask server
+
+type: application
+
+maintainers:
+  - name: lflfm
+    email: 26166377+lflfm@users.noreply.github.com
+
+keywords:
+  - flask
+  - server
+  - helm
+  - k8s
+
+dependencies: []
+
+sources:
+  - https://github.com/lflfm/simple-python-server
+
+home: https://github.com/lflfm/simple-python-server
+
+templateEngine: go
+
+deprecated: false

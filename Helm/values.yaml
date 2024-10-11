@@ -1,0 +1,22 @@
+appName: simple-server
+
+deployment:
+  name: simple-server-deployment
+  replicas: 1
+
+image:
+  repository: lflfm/simple-server-test
+  tag: latest
+
+service:
+  name: simple-server-service
+  port: 80
+  targetPort: 5000
+  type: ClusterIP
+
+ingress:
+  name: simple-server-ingress
+  host: simple-test-server.some.domain
+  tlsSecret: simple-server-tls
+  ingressClass: "nginx"
+  certManagerIssuer: "letsencrypt-staging"
